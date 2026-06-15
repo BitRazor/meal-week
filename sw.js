@@ -1,5 +1,5 @@
 // offline cache for the meal app (precache shell, cache-first)
-const C="meal-week-1-9b6acbe7";
+const C="meal-week-1-c2f38b6f";
 const A=["./","./index.html","./manifest.webmanifest","./icon.svg"];
 self.addEventListener('install',function(e){e.waitUntil(caches.open(C).then(function(c){return c.addAll(A);}).then(function(){return self.skipWaiting();}));});
 self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(ks){return Promise.all(ks.map(function(k){if(k!==C)return caches.delete(k);}));}).then(function(){return self.clients.claim();}));});
