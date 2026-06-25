@@ -1,12 +1,12 @@
 {
-  "name": "Meal Week 1",
+  "name": "Meal Week — Week 1",
   "short_name": "Meals",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f6f5f1",
-  "theme_color": "#2f7d4f",
+  "background_color": "#f4f4f1",
+  "theme_color": "#0e9e66",
   "icons": [
     {
       "src": "icon.svg",
