@@ -650,7 +650,7 @@ if(!('serviceWorker' in navigator))return;
 function showUpdate(){
   if(document.getElementById('app-update'))return;
   var bar=document.createElement('div'); bar.id='app-update'; bar.className='updatebar';
-  var msg=document.createElement('button'); msg.type='button'; msg.className='upmsg'; msg.textContent='✨ New version — tap to refresh';
+  var msg=document.createElement('button'); msg.type='button'; msg.className='upmsg'; msg.innerHTML='<svg class="bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 3v4h-4"/></svg>'; msg.appendChild(document.createTextNode(' New version — tap to refresh'));
   msg.onclick=function(){ location.reload(); };
   var x=document.createElement('button'); x.type='button'; x.className='upx'; x.textContent='×'; x.setAttribute('aria-label','Dismiss');
   x.onclick=function(){ bar.remove(); };
